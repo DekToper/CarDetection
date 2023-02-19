@@ -15,6 +15,7 @@ def data_preprocessing(data):
 
     data = tf.keras.utils.image_dataset_from_directory(data)
     data_iterator = data.as_numpy_iterator()
+    data_batch = data_iterator.next()
 
     show_images(4, data_iterator, cfg)
 

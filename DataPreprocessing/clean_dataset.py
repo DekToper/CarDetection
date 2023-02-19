@@ -4,7 +4,6 @@ import sys
 
 
 def clean_dataset(data_dir, img_exts):
-    len_dir = len(os.listdir(data_dir))
     print('Start preprocessing dir ' + data_dir)
     for image_class in os.listdir(data_dir):
         k = 1
