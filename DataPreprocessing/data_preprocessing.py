@@ -19,4 +19,4 @@ def data_preprocessing(data):
     show_images(4, data_iterator, cfg)
 
     data = data.map(lambda x, y: (x / 255, y))
-    train, test, val = data_separation(data)
+    return data_separation(data)
