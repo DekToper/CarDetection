@@ -3,7 +3,7 @@ def load_config():
         dataset_dir='DataSet',
         img_exts=['jpg', 'jpeg'],
         is_clean=False,
-        mode='prod',  # for production mode need to equal 'prod'
+        mode='dev',  # for production mode need to equal 'prod'
         logs_dir='DeepLearning/logs'
     )
 

@@ -11,3 +11,13 @@ def show_images(n, data, cfg):
         plt.show()
     elif cfg['mode'] == 'prod':
         print('ModeTypeError: For image visualization, you need to switch the mode in the config file to dev mode.')
+
+
+def show_predict(img, yhat):
+    fig, ax = plt.subplots(1, figsize=(20, 20))
+    ax[0].imshow(img)
+    if yhat[0] > yhat[1]:
+        ax[0].title.set_text('car')
+    else:
+        ax[0].title.set_text('motorbike')
+    plt.show()
